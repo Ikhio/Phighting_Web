@@ -11,4 +11,23 @@
 <img src="images/Render_Coil.png">
 
 </body>
+
+  <body>
+    <!-- Placeholder for the header -->
+    <div id="header-placeholder"></div>
+
+    <main>
+        <h2>Main Content Here</h2>
+    </main>
+
+    <script>
+        // Fetch and inject the header HTML
+        fetch('header.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('header-placeholder').innerHTML = data;
+            });
+    </script>
+</body>
+  
 </html>
